@@ -1,11 +1,49 @@
 /* --Google fonts import-- */
-@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Css Variables */
+:root {
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Macondo", cursive;
+    --primary-color: #416a8e; /* Blue */
+    --secondary-color: #aa9581; /*light brown */
+    --highlight-color: #41698e; /* Blue */
+    --highlight-color-light: #799fc2; /* light blue */
+
+}
+
+/* Global Styles */
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: var(--primary-font);
+    
 }
 
-h1 {
-    font-family: 'Macondo', cursive;
+h1, h2, h3 {   font-family: var(--secondary-font);
+    color: var(--primary-color);
 }
+
+.sub-heading-color {
+    color: var(--highlight-color);
+}
+
+/* Grid visualisation css for testing */
+.container,
+.row {
+    border: 2px solid black;
+}
+
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgrey;
+}
+
+
+
+
+
+
+
+
+
+
