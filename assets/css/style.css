@@ -147,7 +147,9 @@ h2 {
 #contact .social-links i {
     color: var(--highlight-color-light);
     font-size: 1.9rem;
-    transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s -ease-in-out;
 }
 
 #contact .social-links i:hover {
@@ -157,16 +159,6 @@ h2 {
 #contact .table-dark  * {
     background-color: transparent;
 }
-/* Grid visualisation css for testing */
-/*.container,
-.row {
-    border: 2px solid black;
-}
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-} */
 
 /* Media queries */
 
